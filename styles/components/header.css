@@ -1,0 +1,40 @@
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: 20px 50px;
+    object-fit: cover;
+    box-sizing: border-box;
+
+    z-index: 100;
+}
+
+.header div:first-child a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header div:nth-child(2) {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    cursor: pointer;
+}
+
+.header div:nth-child(2) a{
+    background-color: white;    
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+.header div:nth-child(2) a:hover{
+    background-color: #9d7745;
+    color: white;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(157, 119, 69, 0.57);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(157, 119, 69, 0.57);
+    box-shadow: 4px 4px 8px 0px rgba(157, 119, 69, 0.57);
+}

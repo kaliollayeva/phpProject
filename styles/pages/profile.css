@@ -1,0 +1,136 @@
+.profile{
+    padding: 70px 150px 70px 150px;
+    background-color: black;
+}
+
+.user{
+    display: flex;
+    background-color: white;    
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.user-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin-right: 50px;
+    width: 30%;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.info-side{
+    width: 60%;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.user-info h3{
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    border-bottom: 1px solid black;
+}
+
+.user-blogs{
+    background-color: white;
+}
+
+.blog-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+}
+
+.blog-bottom{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.blog-index{
+    padding: 0 100px;
+    background-color: black;
+    border-radius: 1px solid black;
+}
+
+.editing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;    
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.editing h1{
+    margin: 10px 0;
+}
+
+.fieldset{
+    display: flex;
+    justify-content: center;
+}
+
+.input-file{
+    position: relative;
+}
+
+.input-file input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.blog-description{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: white;
+}
+
+.bottom-item{
+    padding: 15px;
+}
+
+.padd{
+    padding: 15px;
+}
+
+.remove{
+    display: flex;
+    justify-content: flex-end;
+}

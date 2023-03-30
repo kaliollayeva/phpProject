@@ -1,0 +1,60 @@
+
+.modal-register, .modal-login{
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.modal-register.active{
+    width: 100%;
+}
+
+.modal-register.active .modal-inner{
+    left: 470px;
+}
+
+.modal-login.active2{
+    width: 100%;
+}
+
+.modal-login.active2 .modal-inner{
+    left: 470px;
+    top: 200px;
+}
+
+.modal-background{
+    position: absolute;    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.modal-inner{
+    position: absolute;
+    left: -500px;
+    top: 100px;
+    width: 300px;
+    padding: 15px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+
+    background-color: white;
+    color: black;
+
+    z-index: 3;
+}
+
+.input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px 23px;
+}

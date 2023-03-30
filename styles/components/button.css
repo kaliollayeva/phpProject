@@ -1,0 +1,26 @@
+.button{
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 10px 18px;
+    cursor: pointer;
+}
+
+.logout{
+    margin-top: 5px;
+    padding: 7px 13px;
+}
+
+.newImg{
+    margin-bottom: 10px;
+}
+
+.delete{
+    background-color: red;
+    width: 100px;
+    border: none;
+}
+
+.delete a{
+    color: white;
+}

@@ -1,0 +1,14 @@
+.counter{
+    padding: 50px ;
+    text-align: center;
+
+    background-color: black;
+    color: white;
+}
+
+.counter-div{
+    width: 40%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
