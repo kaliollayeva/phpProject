@@ -43,27 +43,41 @@
             }
         
             if(isset($_FILES['image2'], $_FILES['image2']['name']) &&
-            strlen($_FILES['image2']['name']) > 0){
-            $ext2 = end(explode(".", $_FILES['image2']['name']));
-            
-            $image_name2 =time().".".$ext2;
-            
-            move_uploaded_file($_FILES['image2']['tmp_name'],
-            "../../images/blogs/$image_name2");
-            
-            $path2 = "images/blogs/$image_name2";
-            
-            
-            $prep = mysqli_prepare($con,
-            "UPDATE blogs SET img2=? WHERE id=?");
-            
-            mysqli_stmt_bind_param($prep, "si",$path2, $newid);
-            mysqli_execute($prep);
-
-
-            
+                strlen($_FILES['image2']['name']) > 0){
+                $ext2 = end(explode(".", $_FILES['image2']['name']));
+                
+                $image_name2 =time().".".$ext2;
+                
+                move_uploaded_file($_FILES['image2']['tmp_name'],
+                "../../images/blogs/$image_name2");
+                
+                $path2 = "images/blogs/$image_name2";
+                
+                $prep = mysqli_prepare($con,
+                "UPDATE blogs SET img2=? WHERE id=?");
+                
+                mysqli_stmt_bind_param($prep, "si",$path2, $newid);
+                mysqli_execute($prep);        
             }
 
+            if(isset($_FILES['image3'], $_FILES['image3']['name']) &&
+                strlen($_FILES['image3']['name']) > 0){
+                $ext3 = end(explode(".", $_FILES['image3']['name']));
+                
+                $image_name3 =time().".".$ext3;
+                
+                move_uploaded_file($_FILES['image3']['tmp_name'],
+                "../../images/blogs/$image_name3");
+                
+                $path3 = "images/blogs/$image_name3";
+                
+                
+                $prep = mysqli_prepare($con,
+                "UPDATE blogs SET img3=? WHERE id=?");
+                
+                mysqli_stmt_bind_param($prep, "si",$path1, $newid);
+                mysqli_execute($prep);
+            }
 
 
             if(isset($_FILES['image4'], $_FILES['image4']['name']) &&
@@ -83,7 +97,7 @@
                 
                 mysqli_stmt_bind_param($prep, "si",$path4, $newid);
                 mysqli_execute($prep);
-    }
+            }
 
             if(isset($_FILES['image5'], $_FILES['image5']['name']) &&
                 strlen($_FILES['image5']['name']) > 0){
@@ -102,8 +116,7 @@
                 
                 mysqli_stmt_bind_param($prep, "si",$path5, $newid);
                 mysqli_execute($prep);
-}
-
+            }
 
 
             if(isset($_FILES['image6'], $_FILES['image6']['name']) &&
@@ -117,14 +130,13 @@
 
                 $path6 = "images/blogs/$image_name6";
 
-
                 $prep = mysqli_prepare($con,
                 "UPDATE blogs SET img6=? WHERE id=?");
 
                 mysqli_stmt_bind_param($prep, "si",$path6, $newid);
-                 mysqli_execute($prep);
+                mysqli_execute($prep);
 
-}
+            }
             $nickname = $_SESSION['nickname'];
 
             header("Location: $BASE_URL/profile.php?nickname=$nickname");

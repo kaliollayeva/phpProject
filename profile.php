@@ -131,48 +131,209 @@
             ?>
 
             <div class="slider">
-                <div class="slider-photo">
-                    <img src="<?=$BASE_URL?>/<?=$blog['img1']?>" alt="">
-                    <div class="slider-photo-hidden" >
-                        <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
-                        <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                <?php
+                    if(!$blog['img1'] == NULL && 
+                    $blog['img2'] == NULL &&
+                    $blog['img3'] == NULL &&
+                    $blog['img4'] == NULL &&
+                    $blog['img5'] == NULL &&
+                    $blog['img6'] == NULL ){
+                ?>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img1']?>" alt="">
+                        <div class="slider-photo-hidden" >
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-photo">
-                    <img src="<?=$BASE_URL?>/<?=$blog['img2']?>" alt="">
-                    <div class="slider-photo-hidden">
-                        <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
-                        <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                    
+                <?php
+                    }elseif(!$blog['img1'] == NULL && 
+                    !$blog['img2'] == NULL &&
+                    $blog['img3'] == NULL &&
+                    $blog['img4'] == NULL &&
+                    $blog['img5'] == NULL &&
+                    $blog['img6'] == NULL ){
+                ?>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img1']?>" alt="">
+                        <div class="slider-photo-hidden" >
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-photo">
-                    <img src="<?=$BASE_URL?>/<?=$blog['img3']?>" alt="">
-                    <div class="slider-photo-hidden">
-                        <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
-                        <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img2']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-photo">
-                    <img src="<?=$BASE_URL?>/<?=$blog['img4']?>" alt="">
-                    <div class="slider-photo-hidden">
-                        <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
-                        <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+
+                <?php
+                    }elseif(!$blog['img1'] == NULL && 
+                    !$blog['img2'] == NULL &&
+                    !$blog['img3'] == NULL &&
+                    $blog['img4'] == NULL &&
+                    $blog['img5'] == NULL &&
+                    $blog['img6'] == NULL ){
+                ?>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img1']?>" alt="">
+                        <div class="slider-photo-hidden" >
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-photo">
-                    <img src="<?=$BASE_URL?>/<?=$blog['img5']?>" alt="">
-                    <div class="slider-photo-hidden">
-                        <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
-                        <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img2']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
                     </div>
-                </div>
-                <div class="slider-photo">
-                    <img src="<?=$BASE_URL?>/<?=$blog['img6']?>" alt="">
-                    <div class="slider-photo-hidden">
-                        <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
-                        <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img3']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
                     </div>
-                </div>
+                <?php
+                    }elseif(!$blog['img1'] == NULL && 
+                    !$blog['img2'] == NULL &&
+                    !$blog['img3'] == NULL &&
+                    !$blog['img4'] == NULL &&
+                    $blog['img5'] == NULL &&
+                    $blog['img6'] == NULL ){
+                ?>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img1']?>" alt="">
+                        <div class="slider-photo-hidden" >
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img2']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img3']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img4']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+
+                <?php
+                    }elseif(!$blog['img1'] == NULL && 
+                    !$blog['img2'] == NULL &&
+                    !$blog['img3'] == NULL &&
+                    !$blog['img4'] == NULL &&
+                    !$blog['img5'] == NULL &&
+                    $blog['img6'] == NULL ){
+                ?>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img1']?>" alt="">
+                        <div class="slider-photo-hidden" >
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img2']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img3']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img4']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img5']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+
+                <?php
+                    } elseif (!$blog['img1'] == NULL && 
+                    !$blog['img2'] == NULL &&
+                    !$blog['img3'] == NULL &&
+                    !$blog['img4'] == NULL &&
+                    !$blog['img5'] == NULL &&
+                    !$blog['img6'] == NULL ){
+                ?>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img1']?>" alt="">
+                        <div class="slider-photo-hidden" >
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img2']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img3']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img4']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img5']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="slider-photo">
+                        <img src="<?=$BASE_URL?>/<?=$blog['img6']?>" alt="">
+                        <div class="slider-photo-hidden">
+                            <div class="hidden-icon"> <img src="images/slider1/like.png" alt=""></div>
+                            <div class="hidden-icon"> <img src="images/slider1/add.png" alt=""></div>
+                        </div>
+                    </div>
+                <?php
+                    }
+                ?>
+              
             </div>
 
             <div class="bottom-item">
