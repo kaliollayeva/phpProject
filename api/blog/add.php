@@ -27,7 +27,7 @@
                 strlen($_FILES['image1']['name']) > 0){
                 $ext1 = end(explode(".", $_FILES['image1']['name']));
                 
-                $image_name1 =time().".".$ext1;
+                $image_name1 =time().$newid."1.".$ext1;
                 
                 move_uploaded_file($_FILES['image1']['tmp_name'],
                 "../../images/blogs/$image_name1");
@@ -46,7 +46,7 @@
                 strlen($_FILES['image2']['name']) > 0){
                 $ext2 = end(explode(".", $_FILES['image2']['name']));
                 
-                $image_name2 =time().".".$ext2;
+                $image_name2 =time().$newid."2.".$ext2;
                 
                 move_uploaded_file($_FILES['image2']['tmp_name'],
                 "../../images/blogs/$image_name2");
@@ -64,7 +64,7 @@
                 strlen($_FILES['image3']['name']) > 0){
                 $ext3 = end(explode(".", $_FILES['image3']['name']));
                 
-                $image_name3 =time().".".$ext3;
+                $image_name3 =time().$newid."3.".$ext3;
                 
                 move_uploaded_file($_FILES['image3']['tmp_name'],
                 "../../images/blogs/$image_name3");
@@ -75,7 +75,7 @@
                 $prep = mysqli_prepare($con,
                 "UPDATE blogs SET img3=? WHERE id=?");
                 
-                mysqli_stmt_bind_param($prep, "si",$path1, $newid);
+                mysqli_stmt_bind_param($prep, "si",$path3, $newid);
                 mysqli_execute($prep);
             }
 
@@ -84,7 +84,7 @@
                 strlen($_FILES['image4']['name']) > 0){
                 $ext4 = end(explode(".", $_FILES['image4']['name']));
                 
-                $image_name4 =time().".".$ext4;
+                $image_name4 =time().$newid."4.".$ext4;
                 
                 move_uploaded_file($_FILES['image4']['tmp_name'],
                 "../../images/blogs/$image_name4");
@@ -103,7 +103,7 @@
                 strlen($_FILES['image5']['name']) > 0){
                 $ext5 = end(explode(".", $_FILES['image5']['name']));
                 
-                $image_name5 =time().".".$ext5;
+                $image_name5 =time().$newid."5.".$ext5;
                 
                 move_uploaded_file($_FILES['image5']['tmp_name'],
                 "../../images/blogs/$image_name5");
@@ -123,7 +123,7 @@
                 strlen($_FILES['image6']['name']) > 0){
                 $ext6 = end(explode(".", $_FILES['image6']['name']));
 
-                $image_name6 =time().".".$ext6;
+                $image_name6 =time().$newid."6.".$ext6;
 
                 move_uploaded_file($_FILES['image6']['tmp_name'],
                 "../../images/blogs/$image_name6");
